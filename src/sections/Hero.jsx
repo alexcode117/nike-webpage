@@ -36,7 +36,12 @@ const Hero = () => {
         </p>
 
         {/*Custom button*/}
-        <Button label='Shop now' iconURL={arrowRight}  />
+        <Button
+          label='Shop now'
+          iconURL={arrowRight}
+          stylesAnimation='ease-in-out duration-500 cursor-pointer hover:scale-110'
+          stylesAnimationIcon='ease-in-out duration-500 cursor-pointer hover:translate-x-4'
+        />
 
         {/*Statistic*/}
         <div className="flex justify-start items-center flex-wrap w-full mt-20 gap-16">
@@ -59,7 +64,7 @@ const Hero = () => {
           alt="Shoe collection"
           width={610}
           height={500}
-          className="object-contain relative z-10"
+          className="object-contain relative z-10 ease-in-out duration-500 cursor-pointer hover:scale-90 hover:rotate-[28deg]"
         />
 
         {/*Select group of images*/}
@@ -70,6 +75,8 @@ const Hero = () => {
                 imgURL={shoe}
                 changeBigShoeImage={(shoe) => {setBigShoeImg(shoe)}}
                 bigShoeImg={bigShoeImg}
+                stylesAnimation=''
+                stylesAnimationIcon=''
               />
             </div>
           ))}

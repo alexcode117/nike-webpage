@@ -34,6 +34,8 @@ const SpecialOffers = () => {
           <Button
             label='Shop Now'
             iconURL={arrowRight}
+            stylesAnimation='ease-in-out duration-500 cursor-pointer hover:scale-110'
+            stylesAnimationIcon='ease-in-out duration-500 cursor-pointer hover:translate-x-4'            
           />
           <Button
             label='Learn more'
@@ -41,6 +43,8 @@ const SpecialOffers = () => {
             backgroundColor='bg-white'
             borderColor='border-slate-gray'
             textColor='text-slate-gray'
+            stylesAnimation='ease-in-out duration-500 cursor-pointer hover:scale-110'
+            stylesAnimationIcon='ease-in-out duration-500 cursor-pointer hover:translate-x-4'            
           />
         </div>
       </div>

@@ -25,7 +25,10 @@ const SuperQuality = () => {
 
         <div className="mt-11">
           {/*Custom button*/}
-          <Button label='View Details' />
+          <Button
+            label='View Details'
+            stylesAnimation='ease-in-out duration-500 cursor-pointer hover:scale-110'
+          />
         </div>
 
       </div>
